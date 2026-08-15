@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharon Cub Scouts Pack 95</title>
+<meta name="description" content="Cub Scout Pack 95 — Sharon, MA. Den meeting schedule, upcoming events, and how to join, for grades K–5.">
+<style>
+  :root{
+    --navy:#0b3d63;
+    --navy-dark:#082c47;
+    --gold:#f4b400;
+    --gold-dark:#c98f00;
+    --cream:#fdfaf3;
+    --paper:#ffffff;
+    --ink:#1c2530;
+    --ink-soft:#4a5568;
+    --line:#e4ddc9;
+    --stripe:#f6f1e2;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+  }
+  a{color:var(--navy);}
+  img{max-width:100%;}
+
+  header.top{
+    background:var(--navy);
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  .top-inner{
+    max-width:980px;
+    margin:0 auto;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .top-inner .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:1.05rem;
+    text-decoration:none;
+    color:#fff;
+    margin-right:auto;
+  }
+  .top-inner .brand svg{width:34px;height:34px;flex:none;}
+  nav.top-nav{display:flex;gap:4px;flex-wrap:wrap;}
+  nav.top-nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:.88rem;
+    padding:8px 10px;
+    border-radius:6px;
+    opacity:.9;
+  }
+  nav.top-nav a:hover{background:rgba(255,255,255,.12);opacity:1;}
+
+  .hero{
+    background:linear-gradient(180deg,var(--navy) 0%, var(--navy-dark) 100%);
+    color:#fff;
+    text-align:center;
+    padding:52px 20px 60px;
+  }
+  .hero .badge{width:132px;height:132px;margin:0 auto 18px;}
+  .hero h1{
+    margin:0 0 6px;
+    font-size:clamp(1.6rem,4vw,2.4rem);
+    letter-spacing:.02em;
+  }
+  .hero p.tagline{
+    margin:0 auto 22px;
+    max-width:560px;
+    color:#dce7f0;
+    font-size:1.05rem;
+  }
+  .hero .cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:.95rem;
+    border:2px solid transparent;
+    transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-gold{background:var(--gold);color:var(--navy-dark);}
+  .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.6);}
+
+  main{max-width:980px;margin:0 auto;padding:0 20px;}
+  section{padding:52px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:1.5rem;
+    color:var(--navy);
+    margin:0 0 8px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2 .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;height:30px;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--navy-dark);
+    font-size:.85rem;
+    font-weight:800;
+    flex:none;
+  }
+  p.lead{color:var(--ink-soft);max-width:70ch;}
+
+  .card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:22px 24px;
+  }
+
+  table{width:100%;border-collapse:collapse;font-size:.95rem;}
+  table caption{text-align:left;color:var(--ink-soft);font-size:.85rem;margin-bottom:8px;}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);}
+  th{background:var(--navy);color:#fff;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;}
+  tbody tr:nth-child(even){background:var(--stripe);}
+  .table-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--line);}
+  .table-wrap table{border:none;}
+  .table-wrap .table-wrap{border:none;}
+
+  .steps{display:grid;gap:16px;margin-top:18px;}
+  .step{
+    display:flex;
+    gap:16px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 20px;
+    align-items:flex-start;
+  }
+  .step .step-num{
+    flex:none;
+    width:36px;height:36px;
+    border-radius:50%;
+    background:var(--navy);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;
+  }
+  .step h3{margin:0 0 4px;font-size:1.05rem;color:var(--navy);}
+  .step p{margin:0 0 10px;color:var(--ink-soft);font-size:.95rem;}
+  .step .btn{padding:9px 16px;font-size:.85rem;}
+  .step-btn{background:var(--navy);color:#fff;}
+  .step-btn:hover{background:var(--navy-dark);}
+
+  .note{
+    background:var(--stripe);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    font-size:.9rem;
+    color:var(--ink-soft);
+    margin-top:16px;
+  }
+
+  .contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+    margin-top:18px;
+  }
+  .contact-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+  }
+  .contact-card .icon{
+    width:40px;height:40px;
+    margin:0 auto 10px;
+    color:var(--navy);
+  }
+  .contact-card a{font-weight:700;text-decoration:none;}
+  .contact-card a:hover{text-decoration:underline;}
+
+  footer{
+    text-align:center;
+    padding:30px 20px 40px;
+    color:var(--ink-soft);
+    font-size:.85rem;
+  }
+
+  .activities-section{padding-top:48px;}
+  .activities-section > h2{justify-content:center;text-align:center;}
+  .activities-section .kicker{
+    display:block;text-align:center;color:var(--ink-soft);
+    max-width:62ch;margin:0 auto 34px;font-size:1.02rem;
+  }
+  .activities-group h3{
+    color:var(--navy);font-size:1.1rem;margin:0 0 14px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .pack-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:14px;
+    margin-bottom:40px;
+  }
+  .pack-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px 18px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .pack-card .emoji{font-size:1.4rem;line-height:1;flex:none;}
+  .pack-card strong{display:block;color:var(--navy);font-size:.96rem;margin-bottom:2px;}
+  .pack-card span.desc{color:var(--ink-soft);font-size:.88rem;}
+
+  .den-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:14px;
+  }
+  .den-card{
+    background:var(--stripe);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px 18px;
+  }
+  .den-card .grade{
+    display:inline-block;
+    background:var(--navy);
+    color:#fff;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.03em;
+    padding:2px 9px;
+    border-radius:999px;
+    margin-bottom:8px;
+  }
+  .den-card strong{display:block;color:var(--navy);font-size:.98rem;margin-bottom:4px;}
+  .den-card span{color:var(--ink-soft);font-size:.87rem;}
+
+  @media (max-width:600px){
+    nav.top-nav{display:none;}
+    .hero{padding:40px 16px 46px;}
+    section{padding:38px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="Pack 95 logo" width="34" height="34" style="border-radius:50%;display:block;">
+      Pack 95
+    </a>
+    <nav class="top-nav" aria-label="Page sections">
+      <a href="#activities">What We Do</a>
+      <a href="#schedule">Den Schedule</a>
+      <a href="#events">Events</a>
+      <a href="#join">How to Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+  <img class="badge" src="logo.png" alt="Pack 95 Cub Scouts, Sharon MA badge" width="240" height="240" loading="eager">
+  <h1>Sharon Cub Scouts Pack 95</h1>
+  <p class="tagline">Cub Scouts for grades K–5, serving Sharon, Massachusetts. Chartered by the Rotary Club of Sharon.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="#join">How to Join</a>
+    <a class="btn btn-outline" href="https://www.facebook.com/SharonPack95/" target="_blank" rel="noopener">Follow us on Facebook</a>
+  </div>
+</section>
+
+<main>
+
+  <section id="activities" class="activities-section">
+    <h2>What We Do</h2>
+    <span class="kicker">Pack 95 keeps scouts busy during the school year, with hands-on adventures as a full pack, plus activities tailored to each den's age and skill level.</span>
+
+    <div class="activities-group">
+      <h3>Pack Adventures</h3>
+      <div class="pack-grid">
+        <div class="pack-card"><span class="emoji">⛺</span><div><strong>Camping Trips</strong><span class="desc">Fall and spring pack campouts under the stars, plus dedicated outings for our older scouts.</span></div></div>
+        <div class="pack-card"><span class="emoji">🥾</span><div><strong>Hikes &amp; Outdoor Fun</strong><span class="desc">Family hikes, our First Hike of the year, and plenty of time exploring the outdoors.</span></div></div>
+        <div class="pack-card"><span class="emoji">🏁</span><div><strong>Klondike Derby</strong><span class="desc">Sled races, winter games, and friendly competition alongside other packs.</span></div></div>
+        <div class="pack-card"><span class="emoji">🥞</span><div><strong>Pancake Breakfast</strong><span class="desc">A pack tradition &mdash; and a great excuse for seconds.</span></div></div>
+        <div class="pack-card"><span class="emoji">🎖️</span><div><strong>Community Service</strong><span class="desc">Giving back together, like placing flags on veterans' graves each spring.</span></div></div>
+        <div class="pack-card"><span class="emoji">🎉</span><div><strong>Monthly Pack Meetings</strong><span class="desc">Games, songs, skits, and rank advancement ceremonies for the whole pack.</span></div></div>
+      </div>
+    </div>
+
+    <div class="activities-group">
+      <h3>Fun by Den</h3>
+      <div class="den-grid">
+        <div class="den-card"><span class="grade">K&ndash;1st</span><strong>Lion &amp; Tiger</strong><span>First campfires, silly songs, and hands-on crafts that make scouting feel like an adventure from day one.</span></div>
+        <div class="den-card"><span class="grade">2nd</span><strong>Wolf</strong><span>Outdoor skill-building, team games, and den-led projects that build confidence.</span></div>
+        <div class="den-card"><span class="grade">3rd</span><strong>Bear</strong><span>Cooking over a fire, nature exploration, and bigger badge challenges.</span></div>
+        <div class="den-card"><span class="grade">4th</span><strong>Webelos</strong><span>Campout skills, leadership practice, and getting ready for Arrow of Light.</span></div>
+        <div class="den-card"><span class="grade">5th</span><strong>Arrow of Light</strong><span>Joint outings with local Boy Scout troops, advanced outdoor challenges, and the bridge into Scouts BSA.</span></div>
+      </div>
+    </div>
+    <p class="note">This list is a sample of what's planned &mdash; let us know if we should tweak or add anything here!</p>
+  </section>
+
+  <section id="schedule">
+    <h2><span class="num">2</span> Den Meeting Schedule</h2>
+    <p class="lead">Each den meets on Sundays according to grade level. Exact meeting dates each month are shared with registered families — see the events calendar below for pack-wide dates.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Den</th><th>Grade</th><th>Frequency</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lion &amp; Tiger</td><td>K – 1st</td><td>1 Sunday / month</td><td>1:00 – 2:00 PM</td></tr>
+          <tr><td>Wolf</td><td>2nd</td><td>2 Sundays / month</td><td>2:00 – 3:00 PM</td></tr>
+          <tr><td>Bear</td><td>3rd</td><td>2 Sundays / month</td><td>2:30 – 3:45 PM</td></tr>
+          <tr><td>Webelos</td><td>4th</td><td>2 Sundays / month</td><td>2:00 – 3:30 PM</td></tr>
+          <tr><td>AOL (Arrow of Light)</td><td>5th</td><td>2 Sundays / month</td><td>4:00 – 5:00 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2><span class="num">3</span> Upcoming Pack Events</h2>
+    <p class="lead">2026–2027 pack-wide highlights. This list doesn't include den-specific outings or committee meetings — for the full calendar or questions about a specific date, email us.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Time</th><th>Event</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>9/10/2026</td><td>7:00 – 8:00 PM</td><td>Parents Virtual Meeting</td></tr>
+          <tr><td>9/13/2026</td><td>4:00 – 5:30 PM</td><td>September Pack Meeting</td></tr>
+          <tr><td>10/3 – 10/4/2026</td><td>1:00 PM – 10:00 AM</td><td>Pack Camping Trip</td></tr>
+          <tr><td>10/10/2026</td><td>&mdash;</td><td>AOL &amp; Webelos Camping / All Others Day Event</td></tr>
+          <tr><td>10/25/2026</td><td>4:00 – 5:30 PM</td><td>October Pack Meeting</td></tr>
+          <tr><td>11/22/2026</td><td>4:00 – 5:30 PM</td><td>November Pack Meeting</td></tr>
+          <tr><td>12/13/2026</td><td>6:30 – 8:00 PM</td><td>December Pack Meeting</td></tr>
+          <tr><td>1/1/2027</td><td>1:00 – 3:00 PM</td><td>First Hike</td></tr>
+          <tr><td>1/24/2027</td><td>4:00 – 5:30 PM</td><td>January Pack Meeting</td></tr>
+          <tr><td>2/5/2027</td><td>6:00 – 7:00 PM</td><td>Derby Car Check-In Night</td></tr>
+          <tr><td>TBD</td><td>&mdash;</td><td>Webelos / AOL Klondike Derby</td></tr>
+          <tr><td>2/7/2027</td><td>1:00 – 3:00 PM</td><td>February Pack Meeting</td></tr>
+          <tr><td>3/7/2027</td><td>4:00 – 5:30 PM</td><td>March Pack Meeting</td></tr>
+          <tr><td>TBD</td><td>7:00 – 11:00 AM</td><td>Pancake Breakfast</td></tr>
+          <tr><td>4/11/2027</td><td>4:00 – 5:30 PM</td><td>April Pack Meeting</td></tr>
+          <tr><td>5/2/2027</td><td>4:00 – 5:30 PM</td><td>May Pack Meeting</td></tr>
+          <tr><td>5/15 – 5/16/2027</td><td>1:00 PM – 10:00 AM</td><td>Pack Camping Trip (rain date 5/29–5/30)</td></tr>
+          <tr><td>5/28/2027</td><td>6:00 – 7:00 PM</td><td>Placing Flags on Veterans' Graves</td></tr>
+          <tr><td>6/13/2027</td><td>11:00 AM – 2:00 PM</td><td>June Pack Meeting</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="join">
+    <h2><span class="num">4</span> How to Join</h2>
+    <p class="lead">We welcome scouts in kindergarten through 5th grade year-round. Joining is a three-step process:</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Register with National (BeAScout)</h3>
+          <p>Sign up with Scouting America and pay national dues &mdash; $153, plus optional Scout Life magazine.</p>
+          <a class="btn step-btn" href="https://beascout.scouting.org/units/4785b1e7-8b4d-4e9c-9f72-e77db9b07217" target="_blank" rel="noopener">Register with National →</a>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Register with Pack 95</h3>
+          <p>Fill out our local pack registration form.</p>
+          <a class="btn step-btn" href="https://forms.gle/dfZaBbgb8tChHHDp6" target="_blank" rel="noopener">Pack Registration Form →</a>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Pay Local Pack Dues</h3>
+          <p>Cover local pack activities and supplies for the year. Early Bird Special: $208 &middot; Regular: $275.</p>
+          <a class="btn step-btn" href="https://www.paypal.com/ncp/payment/BG7Y372R5WLK2" target="_blank" rel="noopener">Pay Pack Dues →</a>
+        </div>
+      </div>
+    </div>
+    <p class="note">Questions before you sign up? Email <a href="mailto:info@sharoncubscouts.com">info@sharoncubscouts.com</a> or send us a message on Facebook — we're happy to help.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">5</span> Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <div><a href="mailto:info@sharoncubscouts.com">info@sharoncubscouts.com</a></div>
+      </div>
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <div><a href="https://www.facebook.com/SharonPack95/" target="_blank" rel="noopener">facebook.com/SharonPack95</a></div>
+      </div>
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>Sharon, MA 02067</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Sharon Cub Scouts Pack 95 · Sharon, MA · Chartered by the Rotary Club of Sharon
+</footer>
+
+</body>
+</html>
